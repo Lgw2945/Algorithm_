@@ -13,28 +13,28 @@ public:
 class Dog : public Animal
 {
 public:
-    Dog(string word) : m_word(word) {}
-    void makesound() override { cout << "Dog roars: " << m_word << endl; }
+    Dog(string word) : cry(word) {}
+    void makesound() override { cout << "Dog roars: " << cry << endl; }
 private:
-    string m_word;
+    string cry;
 };
 
 class Cat : public Animal
 {
 public:
-    Cat(string word) : m_word(word) {}
-    void makesound() override { cout << "Cat meows: " << m_word << endl; }
+    Cat(string word) : cry(word) {}
+    void makesound() override { cout << "Cat meows: " << cry << endl; }
 private:
-    string m_word;
+    string cry;
 };
 
 class Cow : public Animal
 {
 public:
-    Cow(string word) : m_word(word) {}
-    void makesound() override { cout << "Cow mooing: " << m_word << endl; }
+    Cow(string word) : cry(word) {}
+    void makesound() override { cout << "Cow mooing: " << cry << endl; }
 private:
-    string m_word;
+    string cry;
 };
 
 int main()
