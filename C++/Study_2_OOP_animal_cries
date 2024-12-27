@@ -8,7 +8,6 @@ class Animal
 public:
     Animal() {}
     virtual void makesound() {}
-    virtual ~Animal() {}
 };
 
 class Dog : public Animal
