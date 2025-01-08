@@ -1,5 +1,5 @@
-#include <string>
-#include <vector>
+#include <string> //필요없음
+#include <vector> //필요없음
 #include <cmath>
 
 using namespace std;
