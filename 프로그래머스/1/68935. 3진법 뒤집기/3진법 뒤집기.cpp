@@ -1,6 +1,5 @@
 #include <string>
 #include <vector>
-#include <algorithm>
 
 using namespace std;
 
@@ -10,11 +9,9 @@ int solution(int n) {
     string a = "";
     while(n)
     {
-        a = to_string(n % 3) + a;
+        a = a +to_string(n % 3);
         n /= 3;
     }
-    
-    reverse(a.begin(), a.end());
     
     for(int i = a.length() - 1; i >= 0; i--)
     {
